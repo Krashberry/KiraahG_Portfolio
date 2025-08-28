@@ -19,7 +19,7 @@ Interactive UI – toast notifications with Toaster.
 
 🛠️ Tech Stack
 
-Frontend: JavaScript, React.js, HTML, CSS, TailwindCSS
+Frontend: JavaScript, React.js, HTML, CSS, TailwindCSS, Vite
 
 Backend: Node.js
 
