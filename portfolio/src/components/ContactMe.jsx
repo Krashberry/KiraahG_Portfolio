@@ -26,7 +26,7 @@ export const ContactMe = () => {
   return (
     <>
       <Navbar />
-      <section id="contactme" className="py-24 px-4 relative">
+      <section id="contactme" className="py-24 px-4 relative items-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Contact <span className="text-primary"> Me</span>
         </h2>
@@ -37,22 +37,22 @@ export const ContactMe = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">
+          <div className="space-y-7 justify-center">
+            <h3 className="text-2xl font-semibold mb-7 ">
               {' '}
               Contact Information
             </h3>
 
             <div className="space-y-6 justify-center">
-              <div className="flex items-start space-x-4">
+              <div className="flex space-x-4 justify-center">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />{' '}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Email</h4>
+                  <h4 className="font-medium justify-center"> Email</h4>
                   <a
                     href="mailto:kiraahg@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-colors justify-center"
                   >
                     KiraahG@gmail.com
                   </a>
@@ -63,7 +63,7 @@ export const ContactMe = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a href="https://www.linkedin.com/feed/" target="_blank">
                   <Linkedin />
                 </a>
               </div>
@@ -79,11 +79,28 @@ export const ContactMe = () => {
             <form className="space-y-6">
               <div>
                 <label
+                  htmlFor="company"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {' '}
+                  Company (Optional)
+                </label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  placeholder="Company A Inc"
+                />
+              </div>
+              <div>
+                <label
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
                   {' '}
-                  Your Name
+                  Full Name
                 </label>
                 <input
                   type="text"
@@ -91,7 +108,7 @@ export const ContactMe = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Kiraah..."
+                  placeholder="Firstname Lastname"
                 />
               </div>
 
@@ -109,7 +126,7 @@ export const ContactMe = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="somebody@goodemail.com"
                 />
               </div>
 
@@ -134,7 +151,7 @@ export const ContactMe = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  'cosmic-button w-full flex items-center justify-center gap-2'
+                  'button w-full flex items-center justify-center gap-2'
                 )}
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}

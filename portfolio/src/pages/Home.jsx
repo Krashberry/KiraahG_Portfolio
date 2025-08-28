@@ -3,7 +3,7 @@ import { Navbar } from '../components/Navbar';
 import { AboutMe } from '../components/AboutMe';
 import { Projects } from '../components/Projects';
 import { ContactMe } from '../components/ContactMe';
-import NotFound from './NotFound';
+import NotFound from './NotFound.jsx';
 import SpringDrop from '../components/SpringDrop';
 
 export const Home = () => {

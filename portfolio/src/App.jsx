@@ -4,13 +4,13 @@ import { Home } from './pages/Home';
 import { AboutMe } from './components/AboutMe.jsx';
 import { Projects } from './components/Projects.jsx';
 import { ContactMe } from './components/ContactMe.jsx';
-import { NotFound } from './pages/NotFound';
-// import { Toaster } from '@/components/ui/toaster';
+import NotFound from './pages/NotFound.jsx';
+import { Toaster } from './ui/toaster.jsx';
 
 function App() {
   return (
     <>
-      {/* <Toaster /> */}
+      <Toaster />
       <BrowserRouter>
         <Routes>
           <Route index element={<Navbar />} />
