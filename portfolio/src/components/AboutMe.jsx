@@ -36,7 +36,7 @@ export const AboutMe = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                <a href="#contact" className="button">
+                <a href="contactme" className="button">
                   {' '}
                   Get In Touch
                 </a>
@@ -73,8 +73,7 @@ export const AboutMe = () => {
                   <div className="text-left">
                     <h4 className="font-semibold text-lg">UI/UX Design</h4>
                     <p className="text-muted-foreground">
-                      Designing intuitive user interfaces and seamless user
-                      experiences.
+                      Capable of creating beautiful interfaces.
                     </p>
                   </div>
                 </div>
@@ -90,7 +89,7 @@ export const AboutMe = () => {
                       Project Management
                     </h4>
                     <p className="text-muted-foreground">
-                      Leading projects from conception to completion with agile
+                      Team player, and sometimes leader, trained in agile
                       methodologies.
                     </p>
                   </div>

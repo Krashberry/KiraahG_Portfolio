@@ -15,9 +15,9 @@ export const Home = () => {
         className="min-h-screen bg-background text-foreground overflow-hidden"
       >
         <SpringDrop />
-        <AboutMe />
+        {/* <AboutMe />
         <Projects />
-        <ContactMe />
+        <ContactMe /> */}
       </div>
     </>
   );
