@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
-import Daffy from '../assets/images/daffy_wut.jpg';
+import TheDev from '../assets/images/thedev.JPG';
 
 const SpringDrop = () => {
   const springs = useSpring({
@@ -19,7 +19,7 @@ const SpringDrop = () => {
       }}
     >
       <img
-        src={Daffy}
+        src={TheDev}
         style={{
           width: '100%',
           height: '100%',

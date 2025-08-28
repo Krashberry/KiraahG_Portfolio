@@ -2,36 +2,40 @@ import React from 'react';
 import { Navbar } from './Navbar';
 import { ArrowRight, ExternalLink, Github } from 'lucide-react';
 import '../index.css';
+import project1 from '../assets/images/project1.png';
+// import project2 from '../assets/images/project2.png';
+import project3 from '../assets/images/project3.png';
 
 const projects = [
   {
     id: 1,
-    title: 'SaaS Landing Page',
-    description: 'A beautiful landing page app using React and Tailwind.',
-    image: '/projects/project1.png',
-    tags: ['React', 'TailwindCSS', 'Supabase'],
+    title: 'Donezo | Full Stack SPA',
+    description:
+      'A functional fullstack SPA with Auth/login that allows for the creaion of todo lists.',
+    image: <img src={project1} style={{ width: '100', height: '100' }} />,
+    tags: ['JavaScript', 'React', 'Node.js', 'Prisma', 'Supabase'],
     demoUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/Krashberry/Kiraah_G_Donezo',
   },
   {
     id: 2,
-    title: 'Orbit Analytics Dashboard',
+    title: 'MiniPokedex',
     description:
       'Interactive analytics dashboard with data visualization and filtering capabilities.',
-    image: '/projects/project2.png',
-    tags: ['TypeScript', 'D3.js', 'Next.js'],
+    // image: <img src={project2} style={{ width: '100', height: '100' }} />,
+    tags: ['JavaScript', 'x', 'x'],
     demoUrl: '#',
     githubUrl: '#',
   },
   {
     id: 3,
-    title: 'E-commerce Platform',
+    title: 'CookMate | Recipe Keeper Social Media App',
     description:
-      'Full-featured e-commerce platform with user authentication and payment processing.',
-    image: '/projects/project3.png',
-    tags: ['React', 'Node.js', 'Stripe'],
+      'Full-featured social media platform for cooks, with user authentication and sharing functionality.',
+    image: <img src={project3} style={{ width: '100', height: '100' }} />,
+    tags: ['JavaScript', 'React', 'Supabase', 'Vite', 'Node.js', 'TailwindCSS'],
     demoUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/Little-Friendly/CookMate',
   },
 ];
 
@@ -44,8 +48,7 @@ export const Projects = () => {
           Projects <span className="text-primary"> </span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          Here are some of my recent projects.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -100,9 +103,9 @@ export const Projects = () => {
 
         <div className="text-center mt-12">
           <a
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            className="button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/krashberry"
           >
             Check My Github <ArrowRight size={16} />
           </a>

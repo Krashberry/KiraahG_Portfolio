@@ -7,7 +7,7 @@ export const AboutMe = () => {
   return (
     <>
       <Navbar />
-      <section id="about" className="py-24 px-4 relative">
+      <section id="about" className="py-5 px-4 relative">
         {' '}
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -17,24 +17,26 @@ export const AboutMe = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">
-                Multidisciplinary Artist/Designer & Junior Full-Stack Engineer
+                Junior Full-Stack Engineer & Multidisciplinary Artist/Designer
               </h3>
 
               <p className="text-muted-foreground">
-                With over 5 years of experience in web development, I specialize
-                in creating responsive, accessible, and performant web
-                applications using modern technologies.
+                As a Junior Developer, just getting started in the world of
+                Full-Stack Web Development, I've already logged over 6 months of
+                experience with JavaScript, Python, ChoiceScript, React.js,
+                Vue.js, Express.js, Node.js, Three.js, SQL, PostgresSQL,
+                MongoDB, Prisma, Supabase, Jira, TailwindCSS, and HTML/CSS.
               </p>
 
               <p className="text-muted-foreground">
-                I'm passionate about creating elegant solutions to complex
-                problems, and I'm constantly learning new technologies and
-                techniques to stay at the forefront of the ever-evolving web
-                landscape.
+                Though capapble of Full-Stack Development I am more excited with
+                Front-End development and Design. I'd love to work on projects
+                that are solving real world problems or with a company
+                interested in social good.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                <a href="#contact" className="cosmic-button">
+                <a href="#contact" className="button">
                   {' '}
                   Get In Touch
                 </a>

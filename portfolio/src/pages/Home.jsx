@@ -3,7 +3,7 @@ import { Navbar } from '../components/Navbar';
 import { AboutMe } from '../components/AboutMe';
 import { Projects } from '../components/Projects';
 import { ContactMe } from '../components/ContactMe';
-// import { NotFound } from './pages/NotFound';
+import NotFound from './NotFound';
 import SpringDrop from '../components/SpringDrop';
 
 export const Home = () => {
@@ -15,10 +15,9 @@ export const Home = () => {
         className="min-h-screen bg-background text-foreground overflow-hidden"
       >
         <SpringDrop />
-        {/* <AboutMe />
+        <AboutMe />
         <Projects />
-        <ContactMe /> */}
-        {/* Footer */}
+        <ContactMe />
       </div>
     </>
   );
